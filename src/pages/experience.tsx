@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import type { RootState } from "@/redux/_store";
 
@@ -7,15 +8,25 @@ import CardHistory from "components/card/experienceCard";
 export default function Experience() {
    const lang = useSelector((state: RootState) => state.lang.lang);
 
-   if (!data || data.length === 0) {
-      return <div>No experience found.</div>;
-   }
+   const [showNonIT, setShowNonIT] = useState(true);
+   const filteredData = showNonIT ? data : data.filter((item) => item.isITRelated === true);
 
    return (
       <div className="allFull flex flex-col gap-2 overflow-y-auto">
-         {data.map((item, index) => (
-            <CardHistory key={index} title={item.title[lang]} location={item.location[lang]} period={item.period} />
-         ))}
+         {/* Toggle Button */}
+         <div className="h-10 gap-2 flex items-center">
+            <button onClick={() => setShowNonIT(!showNonIT)} className="h-full aspect-square p-1 border-2 rounded-lg">
+               {showNonIT && <div className="allFull bg-(--text) rounded-md"></div>}
+            </button>
+            <span className="text-xl italic tracking-wider">Show non-IT experience</span>
+         </div>
+
+         {/* Content */}
+         <div className="h-175 gap-2 flex flex-col">
+            {filteredData.map((item, index) => (
+               <CardHistory key={index} title={item.title[lang]} description={item.description[lang]} period={item.period} url={item.url} />
+            ))}
+         </div>
       </div>
    );
 }

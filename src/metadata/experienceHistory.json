@@ -4,11 +4,25 @@
          "en": "Internship at South Sumatra Communication and Informatics Department",
          "id": "Magang di Dinas Komunikasi dan Informatika Sumatera Selatan"
       },
-      "location": {
+      "description": {
          "en": "South Sumatra, Palembang",
          "id": "Sumatera Selatan, Palembang"
       },
       "period": "06-12-2021 - 14-01-2022",
-      "date": "2022-01-14"
+      "url": "",
+      "isITRelated": true
+   },
+   {
+      "title": {
+         "en": "Longstanding commitment to World Cup Beatmapping (3 years)",
+         "id": "Berkomitmen dalam World Cup Beatmapping selama 3 tahun"
+      },
+      "description": {
+         "en": "Custom mappers in 'osu!catch' as Sololiquy",
+         "id": "Custom mappers di 'osu!catch' sebagai Sololiquy"
+      },
+      "period": "13-05-2023 - 20-07-2025",
+      "url": "https://osu.ppy.sh/wiki/en/Tournaments#official-world-cups",
+      "isITRelated": false
    }
 ]

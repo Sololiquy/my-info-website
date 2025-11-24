@@ -14,7 +14,7 @@ export default function Layout() {
                <LanguageSwitcher />
             </div>
             <div
-               className={`h-15 flex flex-row gap-10 text-2xl allCenter p-2 bg-(--content-bg) dark:shadow-[0_0_0_rgba(255,255,255,0.6)] transition`}
+               className={`h-15 shrink-0 flex flex-row gap-10 text-2xl allCenter p-2 bg-(--content-bg) dark:shadow-[0_0_0_rgba(255,255,255,0.6)] transition`}
             >
                <Link to="contact">{text.contact}</Link>
                <Link to="/experience">{text.experience}</Link>
