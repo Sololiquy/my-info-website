@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+   --bg: rgb(255, 255, 255);
+   --text: rgb(15, 23, 42);
+
+   --theme-button-bg: rgb(254, 111, 8);
+   --content-bg: rgb(242, 242, 242);
+   --card-experience-bg: rgb(255, 255, 255);
+}
+
+.dark {
+   --bg: rgb(17, 24, 39);
+   --text: rgb(255, 255, 255);
+
+   --theme-button-bg: rgb(17, 24, 39);
+   --content-bg: rgb(17, 24, 39);
+   --card-experience-bg: rgb(63, 63, 63);
+}
+
+body {
+   @apply m-0 p-0 bg-[var(--bg)] text-[var(--text)];
+}
+
+.allCenter {
+   @apply items-center justify-center;
+}
+
+.allFull {
+   @apply w-full h-full;
+}
+
+.allScreen {
+   @apply w-screen h-screen;
+}
+
+.text-default {
+   color: rgb(17 24 39);
+}
