@@ -21,7 +21,7 @@
 }
 
 body {
-   @apply m-0 p-0 bg-[var(--bg)] text-[var(--text)];
+   @apply m-0 p-0 bg-(--bg) text-(--text);
 }
 
 .allCenter {
@@ -34,6 +34,13 @@ body {
 
 .allScreen {
    @apply w-screen h-screen;
+}
+
+.tabLink {
+   @apply w-50 h-full p-2 flex border-(--text) justify-center items-center;
+}
+.tabLink_active {
+   @apply border-2 rounded-t-xl;
 }
 
 .text-default {
