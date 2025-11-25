@@ -1,5 +1,3 @@
-import React from "react";
-
 import data from "@/metadata/projectHistory.json";
 
 import CardHistory from "components/card/projectCard";
