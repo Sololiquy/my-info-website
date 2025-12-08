@@ -2,6 +2,8 @@
    "contact": "Kontak",
    "experience": "Pengalaman",
    "project": "Proyek",
+   "skill": "Keahlian",
    "phone_number": "Nomor telepon",
-   "email_address": "Alamat email"
+   "email_address": "Alamat email",
+   "it_related_filter": "Tampilkan tidak terkait IT"
 }

@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import type { RootState } from "@/redux/_store";
+import { useT } from "@/lang/_locale";
 
 import data from "@/metadata/experienceHistory.json";
 import CardHistory from "components/card/experienceCard";
 
 export default function Experience() {
    const lang = useSelector((state: RootState) => state.lang.lang);
+   const text = useT();
 
    const [showNonIT, setShowNonIT] = useState(true);
    const filteredData = showNonIT ? data : data.filter((item) => item.isITRelated === true);
@@ -18,7 +20,7 @@ export default function Experience() {
             <button onClick={() => setShowNonIT(!showNonIT)} className="h-full aspect-square p-1 border-2 rounded-lg">
                {showNonIT && <div className="allFull bg-(--text) rounded-md"></div>}
             </button>
-            <span className="text-xl italic tracking-wider">Show non-IT experience</span>
+            <span className="text-xl italic tracking-wider">{text.it_related_filter}</span>
          </div>
 
          {/* Content */}

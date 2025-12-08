@@ -9,7 +9,7 @@ export default function Layout() {
    const text = useT();
    const [tabIndex, setTabIndex] = useState<number>(0);
    return (
-      <div className={`allScreen flex allCenter`}>
+      <div className={`allScreen flex allCenter overflow-hidden`}>
          <div className={`flex flex-col gap-2 absolute top-3 right-3`}>
             <ThemeSwitch />
             <LanguageSwitcher />
@@ -25,8 +25,11 @@ export default function Layout() {
                <Link className={`tabLink ${tabIndex === 2 ? "tabLink_active" : ""}`} onClick={() => setTabIndex(2)} to="/project">
                   {text.project}
                </Link>
+               <Link className={`tabLink ${tabIndex === 3 ? "tabLink_active" : ""}`} onClick={() => setTabIndex(3)} to="/skill">
+                  {text.skill}
+               </Link>
             </div>
-            <div className={`h-185 p-2 bg-(--content-bg) dark:shadow-[0_0_5px_rgba(255,255,255,0.6)] transition`}>
+            <div className={`h-185 p-2 relative bg-(--content-bg) dark:shadow-[0_0_5px_rgba(255,255,255,0.6)] transition`}>
                <Outlet />
             </div>
          </div>

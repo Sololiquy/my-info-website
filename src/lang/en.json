@@ -2,6 +2,8 @@
    "contact": "Contact",
    "experience": "Experience",
    "project": "Project",
+   "skill": "Skill",
    "phone_number": "Phone number",
-   "email_address": "Email address"
+   "email_address": "Email address",
+   "it_related_filter": "Show non-IT related"
 }

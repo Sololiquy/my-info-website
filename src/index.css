@@ -24,6 +24,20 @@ body {
    @apply m-0 p-0 bg-(--bg) text-(--text);
 }
 
+.bg-lines {
+   background: repeating-linear-gradient(90deg, rgba(249, 249, 249, 0) 0px, rgb(0, 0, 0) 2px, transparent 5px, transparent 10px);
+   background-size: 200% 100%;
+   animation: move-lines 6s linear infinite;
+}
+@keyframes move-lines {
+   0% {
+      background-position: 0 0;
+   }
+   100% {
+      background-position: -200% 0;
+   }
+}
+
 .allCenter {
    @apply items-center justify-center;
 }
