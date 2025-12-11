@@ -9,7 +9,7 @@ export default function Layout() {
    const text = useT();
    const [tabIndex, setTabIndex] = useState<number>(0);
    return (
-      <div className={`allScreen flex allCenter overflow-hidden`}>
+      <div className={`allScreen flex allCenter overflow-hidden bg-lines`}>
          <div className={`flex flex-col gap-2 absolute top-3 right-3`}>
             <ThemeSwitch />
             <LanguageSwitcher />

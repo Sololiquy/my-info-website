@@ -4,6 +4,7 @@
 
 :root {
    --bg: rgb(255, 255, 255);
+   --bg-lines: rgb(242, 242, 242);
    --text: rgb(15, 23, 42);
 
    --theme-button-bg: rgb(254, 111, 8);
@@ -13,6 +14,7 @@
 
 .dark {
    --bg: rgb(17, 24, 39);
+   --bg-lines: rgb(63, 63, 63);
    --text: rgb(255, 255, 255);
 
    --theme-button-bg: rgb(17, 24, 39);
@@ -25,16 +27,17 @@ body {
 }
 
 .bg-lines {
-   background: repeating-linear-gradient(90deg, rgba(249, 249, 249, 0) 0px, rgb(0, 0, 0) 2px, transparent 5px, transparent 10px);
-   background-size: 200% 100%;
-   animation: move-lines 6s linear infinite;
+   background: repeating-linear-gradient(110deg, var(--bg-lines) 0px, var(--bg-lines) 5px, transparent 2px, transparent 40px);
+   background-size: 150% 150%;
+   background-attachment: fixed;
+   animation: bg-line_animated 0.5s linear infinite;
 }
-@keyframes move-lines {
+@keyframes bg-line_animated {
    0% {
-      background-position: 0 0;
+      background-position: -44px 0px;
    }
    100% {
-      background-position: -200% 0;
+      background-position: 0px 0px;
    }
 }
 

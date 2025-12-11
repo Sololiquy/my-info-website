@@ -5,5 +5,10 @@
    "skill": "Keahlian",
    "phone_number": "Nomor telepon",
    "email_address": "Alamat email",
+   "level-1": "Dasar",
+   "level-2": "Pemula",
+   "level-3": "Menengah",
+   "level-4": "Ahli",
+   "level-5": "Profesional",
    "it_related_filter": "Tampilkan tidak terkait IT"
 }

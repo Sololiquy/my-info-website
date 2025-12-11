@@ -5,5 +5,10 @@
    "skill": "Skill",
    "phone_number": "Phone number",
    "email_address": "Email address",
+   "level-1": "Basic",
+   "level-2": "Beginner",
+   "level-3": "Intermediate",
+   "level-4": "Advanced",
+   "level-5": "Expert",
    "it_related_filter": "Show non-IT related"
 }
