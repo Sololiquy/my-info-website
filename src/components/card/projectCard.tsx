@@ -4,6 +4,7 @@ type parameter = {
    data: {
       title: string;
       url: string;
+      date_created: string;
    };
 };
 
